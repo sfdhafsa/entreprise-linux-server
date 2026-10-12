@@ -12,6 +12,16 @@ if [[ ! -f "$functions" ]];then
 fi
 source "$configuration"
 source "$functions"
+if [[ ! -d "$SOURCE_DIR" ]];then
+        log "ERROR"  "source directory $SOURCE_DIR  doesn't exist"
+	exit 1
+fi
+if [[ ! -d "$BACKUP_DIR" ]];then
+        log "ERROR" "backup directory $BACKUP_DIR  doesn't exist"
+	exit 1
+fi
+
+
 
 if [[ "$#" -ne 1 ]];then
 	echo "usage: ./scripts/admin.sh <health|backup>"
@@ -19,12 +29,11 @@ if [[ "$#" -ne 1 ]];then
 fi
 
 if [[ "$1" == "health" ]];then
-	echo "health operation selected"
+	log "INFO" "health operation selected"
 elif [[ "$1" == "backup" ]];then
-	echo "backup operation selected"
+	log "INFO" "backup operation selected"
 else
-	echo "invalid argument"
+	log "ERROR" "invalid argument"
 	exit 1
 fi
-
 
