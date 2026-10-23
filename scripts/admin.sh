@@ -30,8 +30,10 @@ fi
 
 if [[ "$1" == "health" ]];then
 	log "INFO" "health operation selected"
+	check_disk_usage
 elif [[ "$1" == "backup" ]];then
 	log "INFO" "backup operation selected"
+	backup_applications
 else
 	log "ERROR" "invalid argument"
 	exit 1
