@@ -1,0 +1,10 @@
+[Unit]
+Description=Daily Enterprise Server Application Backup
+
+[Timer]
+OnCalendar=*-*-* 02:00:00
+Persistent=true
+Unit=enterprise-backup.service
+
+[Install]
+WantedBy=timers.target

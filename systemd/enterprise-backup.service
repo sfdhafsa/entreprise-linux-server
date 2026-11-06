@@ -1,0 +1,8 @@
+[Unit]
+Description=Enterprise Server Application Backup
+
+[Service]
+Type=oneshot
+User=sysadmin
+WorkingDirectory=/home/sysadmin/admin-tool
+ExecStart=/bin/bash /home/sysadmin/admin-tool/scripts/admin.sh backup
