@@ -44,10 +44,10 @@ Goal: Automate useful administration tasks.
 
 The following work has been exercised in the lab but is reserved for a separate repository update:
 
-- [ ] Document UFW rules for Host-only SSH and HTTP access
-- [ ] Record allowed and blocked connection tests
-- [ ] Add the HTTP health-check script and its usage
-- [ ] Record the Nginx stop, detection, restart, and recovery test
+- [x] Document UFW rules for Host-only SSH and HTTP access
+- [x] Record allowed and blocked connection tests
+- [x] Add the HTTP health-check script and its usage
+- [x] Record the Nginx stop, detection, restart, and recovery test
 
 These unchecked items refer to repository integration and documentation, not a claim that the lab exercises remain undone.
 

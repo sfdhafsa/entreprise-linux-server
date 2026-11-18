@@ -40,6 +40,7 @@ These are the addresses observed in this lab. They are assigned through DHCP and
 - [Server baseline](docs/server-baseline.md)
 - [Network and web-service setup](docs/setup.md)
 - [Roadmap](docs/roadmap.md)
+- [Firewall and web health check](docs/firewall-and-health-check.md)
 
 ## Existing Automation
 
